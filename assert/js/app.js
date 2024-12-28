@@ -30,6 +30,26 @@ function dragtache(){
         
         })
 
-}
-    )};
+
+        scrums.forEach(scrum =>{
+            scrum.addEventListener('dragover' , function (e){
+                console.log ('dragover');
+                e.preventDefault();
+                
+            })
+
+            scrum.addEventListener('dragleave' , function (e){
+                // console.log ('dragover');
+             
+            })
+
+            scrum.addEventListener('drop' , function (e){
+                scrum.append(drag);
+            })
+
+
+        })
+        })
+
+    };
 
