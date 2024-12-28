@@ -17,6 +17,10 @@ btn.onclick = function () {
         delettache();
     }
     dragtache();
+
+    let userstory = JSON.parse(localStorage.getItem('tache')) || [];
+    userstory.push(input.value);
+    localStorage.setItem('tache',JSON.stringify(userstory));
 }
 let drag = null;
 
@@ -65,6 +69,8 @@ function delettache() {
             const tache = button.parentElement
             tache.remove();
             console.log("hh");
+
+            localStorage.removeItem('tache');
         };
     })
 };
@@ -75,4 +81,5 @@ function edittache(){
     edit.forEach(button =>{
         button.tache.value ;
     })
+
 }
