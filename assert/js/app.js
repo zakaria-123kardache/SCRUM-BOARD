@@ -11,6 +11,7 @@ btn.onclick = function () {
             `<div class = "tache">
          <p  draggable="true" >${input.value}</p>
          <button class ="delete">delete</button>
+         <button class ="edit">edit</button>
         </div>
        `
         delettache();
@@ -67,3 +68,11 @@ function delettache() {
         };
     })
 };
+
+
+function edittache(){
+    const edit = document.querySelectorAll(".edit");
+    edit.forEach(button =>{
+        button.tache.value ;
+    })
+}
