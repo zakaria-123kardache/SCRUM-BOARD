@@ -1,11 +1,16 @@
 let btn = document.getElementById('btn');
 let input = document.getElementById('input');
 let scrums = document.querySelectorAll('.Scrum');
+let delet = document.getElementById('delet');
 
 btn.onclick = function(){
     if (input.value != ''){
         scrums[0].innerHTML +=
-        `<p class = "tache" draggable="true" >${input.value}</p>`
+        `<div class = "tache">
+         <p  draggable="true" >${input.value}</p>
+         <button id ="delet">delet</button>
+        </div>
+       `
     }
     dragtache();
 }
@@ -53,3 +58,9 @@ function dragtache(){
 
     };
 
+delet.onclick = function (){
+    tache.addEventListener ('click',function (e){
+     
+    });        
+
+};
