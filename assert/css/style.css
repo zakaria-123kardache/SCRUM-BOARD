@@ -78,9 +78,17 @@ h2{
 }
 
 .tache{
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
     background: orange;
     padding: 5px;
     margin: 3px;
     color: #fff;
+}
+.tache #delete{
+    border: none;
+    border-radius: 5px;
+    color: #20252A;
+    background: #FFD900;
 }
 
