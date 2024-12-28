@@ -59,7 +59,7 @@ h2{
    grid-template-columns: repeat(3,1fr);
    align-items: center;
    justify-content: space-around;
-justify-items: center;
+   justify-items: center;
    gap: 1rem;
 
 
@@ -73,7 +73,7 @@ justify-items: center;
  height: auto;
  padding: 5px;
  border-radius: 10px;
- width: 200px;
+ width: 400px;
 
 }
 
