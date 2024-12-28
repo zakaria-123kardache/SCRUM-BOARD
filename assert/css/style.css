@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    background: #20252A ;
+    color: white ;
+    display: grid;
+    align-items: center ;
+    height: 100vh;
+    /* gap: 4rem; */
+    
+}
+
+.ajouter{
+    /* background: red; */
+    padding: 3rem;
+    border-radius: 10px;
+    /* width: 100vw; */
+    height: 10vh;
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    /* width: 100%; */
+    align-items: end ;
+}
+
+h2{
+ 
+}
+
+.ajouter .data {
+    display: grid;
+    width: 100%;   
+}
+
+.ajouter .data input{
+   
+    padding: 0.3rem;
+    border-radius: 1px solid #20252A;
+    outline: none;
+}
+
+.ajouter .data button{
+    
+    outline: none;
+    background: #FFD900;
+    color: white;
+    border-radius: 1px solid #20252A;
+    border: none;
+    padding: 5px;
+}
+
+.tableau{
+   display: grid;
+   width: 100%;
+   grid-template-columns: repeat(3,1fr);
+   align-items: center;
+   justify-content: space-around;
+   justify-items: center;
+   gap: 1rem;
+
+
+}
+.tableau .Scrum h2{
+ text-align: center;
+
+}
+.tableau .Scrum {
+ background: red;
+ height: auto;
+ padding: 5px;
+ border-radius: 10px;
+ width: 400px;
+
+}
+
+.tache{
+    display: grid;
+    grid-template-columns: 3fr 0.5fr 0.5fr;
+    background: orange;
+    padding: 5px;
+    margin: 3px;
+    color: #fff;
+}
+.tache #delete{
+    border: none;
+    border-radius: 5px;
+    color: #20252A;
+    background: #FFD900;
+}
+
