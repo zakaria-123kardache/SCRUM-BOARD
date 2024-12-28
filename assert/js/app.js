@@ -70,6 +70,7 @@ function delettache() {
             tache.remove();
             console.log("hh");
 
+            localStorage.removeItem('tache');
         };
     })
 };
