@@ -79,7 +79,7 @@ h2{
 
 .tache{
     display: grid;
-    grid-template-columns: 3fr 0.5fr;
+    grid-template-columns: 3fr 0.5fr 0.5fr;
     background: orange;
     padding: 5px;
     margin: 3px;
